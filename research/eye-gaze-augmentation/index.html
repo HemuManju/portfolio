@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abstract" class="md-skip">
+        <a href="#results" class="md-skip">
           Skip to content
         </a>
       
@@ -161,11 +161,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../blogs/first/" class="md-tabs__link">
+      <a href="../../blogs/2023/first/" class="md-tabs__link">
         Blogs
       </a>
     </li>
+  
+
   
 
       
@@ -178,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../publications/_index/" class="md-tabs__link">
+      <a href="../../publications/" class="md-tabs__link">
         Publications
       </a>
     </li>
@@ -291,10 +298,46 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../blogs/first/" class="md-nav__link">
+      <a href="../../blogs/2023/first/" class="md-nav__link">
         My First Post
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -341,8 +384,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../publications/_index/" class="md-nav__link">
-         index
+      <a href="../../publications/" class="md-nav__link">
+        Index
       </a>
     </li>
   
@@ -501,13 +544,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
@@ -813,13 +849,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
@@ -844,35 +873,21 @@
   <h1>Selective Eye-gaze Augmentation To Enhance Imitation Learning In Atari Games</h1>
 
 <p align="center">
-  <a class="glightbox" href="overview.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="overview.jpg" alt="drawing"></a>
+  <a class="glightbox" href="cover.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="cover.jpg" alt="drawing"></a>
 </p>
 
-<hr />
-<h2 id="abstract">Abstract</h2>
-<p>This paper presents the selective use of eye-gaze information in learning human actions in Atari games. Extensive evidence suggests that our eye movements convey a wealth of information about the direction of our attention and mental states and encode the information necessary to complete a task.
-Based on this evidence, we hypothesize that selective use of eye-gaze, as a clue for attention direction, will enhance the learning from demonstration.
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This paper presents the selective use of eye-gaze information in learning human actions in Atari games. Extensive evidence suggests that our eye movements convey a wealth of information about the direction of our attention and mental states and encode the information necessary to complete a task. Based on this evidence, we hypothesize that selective use of eye-gaze, as a clue for attention direction, will enhance the learning from demonstration.
 For this purpose, we propose a selective eye-gaze augmentation (SEA) network that learns when to use the eye-gaze information. The proposed network architecture consists of three sub-networks: gaze prediction, gating, and action prediction network. Using the prior 4 game frames, a gaze map is predicted by the gaze prediction network, which is used for augmenting the input frame. The gating network will determine whether the predicted gaze map should be used in learning and is fed to the final network to predict the action at the current frame.
 To validate this approach, we use publicly available Atari Human Eye-Tracking And Demonstration (Atari-HEAD) dataset consists of 20 Atari games with 28 million human demonstrations and 328 million eye-gazes (over game frames) collected from four subjects. We demonstrate the efficacy of selective eye-gaze augmentation compared to the state of the art Attention Guided Imitation Learning (AGIL), Behavior Cloning (BC).</p>
-<p>The results indicate that the selective augmentation approach (the SEA network) performs significantly better than the AGIL and BC. Moreover, to demonstrate the significance of selective use of gaze through the gating network, we compare our approach with the random selection of the gaze. Even in this case, the SEA network performs significantly better, validating the advantage of selectively using the gaze in demonstration learning.</p>
+</div>
 <h2 id="results">Results</h2>
-<p align="center">
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-</p>
-
-<table>
-<thead>
-<tr>
-<th>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>The results indicate that the selective augmentation approach (the SEA network) performs significantly better than the AGIL and BC. Moreover, to demonstrate the significance of selective use of gaze through the gating network, we compare our approach with the random selection of the gaze. Even in this case, the SEA network performs significantly better, validating the advantage of selectively using the gaze in demonstration learning.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</p>
+</div>
 
 
 

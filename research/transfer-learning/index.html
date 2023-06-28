@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abstract" class="md-skip">
+        <a href="#results" class="md-skip">
           Skip to content
         </a>
       
@@ -159,11 +159,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../blogs/first/" class="md-tabs__link">
+      <a href="../../blogs/2023/first/" class="md-tabs__link">
         Blogs
       </a>
     </li>
+  
+
   
 
       
@@ -176,7 +183,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../publications/_index/" class="md-tabs__link">
+      <a href="../../publications/" class="md-tabs__link">
         Publications
       </a>
     </li>
@@ -289,10 +296,46 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../blogs/first/" class="md-nav__link">
+      <a href="../../blogs/2023/first/" class="md-nav__link">
         My First Post
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -339,8 +382,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../publications/_index/" class="md-nav__link">
-         index
+      <a href="../../publications/" class="md-nav__link">
+        Index
       </a>
     </li>
   
@@ -751,29 +794,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
-  
-    <nav class="md-nav" aria-label="Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time" class="md-nav__link">
-    The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -824,29 +847,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
-  
-    <nav class="md-nav" aria-label="Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time" class="md-nav__link">
-    The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -868,30 +871,28 @@
   <h1>Transfer Learning of Motor Difficulty Classification in Physical Human-Robot Interaction Using Electromyography</h1>
 
 <p align="center">
-  <a class="glightbox" href="featured-hex.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured-hex.jpg" alt="drawing"></a>
+  <a class="glightbox" href="cover.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="cover.jpg"></a>
 </p>
 
-<hr />
-<h2 id="abstract">Abstract</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
 <p>Efficient human-robot collaboration during physical interaction requires estimating the human state for optimal role allocation and load sharing. Machine learning (ML) methods are gaining popularity for estimating the interaction parameters from physiological signals. However, due to individual differences, the ML models might not generalize well to new subjects. In this study, we present a convolution neural network (CNN) model to predict motor control difficulty using surface electromyography (sEMG) from human upper-limb during physical human-robot interaction (pHRI) task and present a transfer learning approach to transfer a learned model to new subjects.</p>
 <p>Twenty six individuals participated in a pHRI experiment where a subject guides the robot's end-effector with different levels of motor control difficulty. The motor control difficulty is varied by changing the damping parameter of the robot from low to high and constraining the motion to gross and fine movements. A CNN network with raw sEMG as input is used to classify the motor control difficulty.</p>
 <p>The CNN's transfer learning approach is compared against Riemann geometry-based Procrustes analysis (RPA). With very few labeled samples from new subjects, we demonstrate that the CNN-based transfer learning approach (avg. 69.77%) outperforms the RPA transfer learning (avg. 59.20%).</p>
 <p>Moreover, we observe that the subject's skill level in the pre-trained model has no significant effect on the transfer learning performance of the new users.</p>
-<h2 id="results">Results</h2>
-<p align="center">
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-  <a class="glightbox" href="featured.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="featured.jpeg" width="200" /></a>
-</p>
-
+</div>
 <p><strong>The study set out to answer two questions:</strong></p>
 <ul>
 <li>Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?</li>
 <li>Do the task type information and individual differences in the task performance influence the classification of reaction time?</li>
 </ul>
+<h2 id="results">Results</h2>
 <p>The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.</p>
 <p>These results are in agreement with the Linear Approach to the Threshold with Ergodic Rate (LATER) model, which suggests that reaction time depends on evidence collected and the task difficulty. The classifier trained on the physiological features using reaction time as the label can be used to classify task difficulty well above chance. Such systems can be utilized in Automation Invocation models that utilize appropriate control inputs and control strategies for optimal role allocation in collaborative tasks such as teleoperation.</p>
-<h3 id="the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time"><strong>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</strong></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time**</p>
+</div>
 
 
 

@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../../publications/_index/">
+        <link rel="prev" href="../../publications/">
       
       
         <link rel="next" href="../eye-gaze-augmentation/">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abstract" class="md-skip">
+        <a href="#results" class="md-skip">
           Skip to content
         </a>
       
@@ -161,11 +161,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../blogs/first/" class="md-tabs__link">
+      <a href="../../blogs/2023/first/" class="md-tabs__link">
         Blogs
       </a>
     </li>
+  
+
   
 
       
@@ -178,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../publications/_index/" class="md-tabs__link">
+      <a href="../../publications/" class="md-tabs__link">
         Publications
       </a>
     </li>
@@ -291,10 +298,46 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../blogs/first/" class="md-nav__link">
+      <a href="../../blogs/2023/first/" class="md-nav__link">
         My First Post
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -341,8 +384,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../publications/_index/" class="md-nav__link">
-         index
+      <a href="../../publications/" class="md-nav__link">
+        Index
       </a>
     </li>
   
@@ -451,13 +494,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
@@ -813,13 +849,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#results" class="md-nav__link">
     Results
   </a>
@@ -847,34 +876,25 @@
   <a class="glightbox" href="cover.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="cover.jpg"/></a>
 </p>
 
-<h2 id="abstract">Abstract</h2>
-<p>There is an increasing interest in adapting the deep learning models into neuroimaging techniques such as electroencephalogram (EEG). However, one of the fundamental problems in deep learning models is the interpretability of
-the learned representations. Even though many interpretability models exist for computer vision applications, adapting those
-methods for deep learning using EEG is still a challenge. In this regard, we propose a novel computational approach
-to increase the interpretability of results from deep learning algorithm using two popular saliency detection algorithms:
-integrated gradients and ablation attribution method. The method provides the importance of values across different EEG frequency bands (Theta, Alpha, Beta, Gamma) and across different electrode locations. We can use these importance values to recognize which electrode and frequency bands are relevant for a particular classification problem. We demonstrate
-the proposed method’s efficacy in a physical human-robot co-manipulation experiment where a convolution neural network
-(CNN) model is trained to classify the user’s mental workload using raw EEG recordings. The experiment is predominantly visuospatial and motor control-oriented. The proposed method found the Gamma and Beta frequency band across parietal and occipital regions to be important, which are indeed associated with visuospatial processing and sensory integration.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>There is an increasing interest in adapting the deep learning models into neuroimaging techniques such as electroencephalogram (EEG). However, one of the fundamental problems in deep learning models is the interpretability of the learned representations. Even though many interpretability models exist for computer vision applications, adapting those methods for deep learning using EEG is still a challenge. In this regard, we propose a novel computational approach to increase the interpretability of results from deep learning algorithm using two popular saliency detection algorithms: integrated gradients and ablation attribution method. The method provides the importance of values across different EEG frequency bands (Theta, Alpha, Beta, Gamma) and across different electrode locations. We can use these importance values to recognize which electrode and frequency bands are relevant for a particular classification problem. We demonstrate the proposed method’s efficacy in a physical human-robot co-manipulation experiment where a convolution neural network (CNN) model is trained to classify the user’s mental workload using raw EEG recordings. The experiment is predominantly visuospatial and motor control-oriented. The proposed method found the Gamma and Beta frequency band across parietal and occipital regions to be important, which are indeed associated with visuospatial processing and sensory integration.</p>
+</div>
 <h2 id="results">Results</h2>
 <p><strong>The study set out to answer two questions:</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <ul>
 <li>Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?</li>
 <li>Do the task type information and individual differences in the task performance influence the classification of reaction time?</li>
 </ul>
+</div>
 <p>The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.</p>
 <p>These results are in agreement with the Linear Approach to the Threshold with Ergodic Rate (LATER) model, which suggests that reaction time depends on evidence collected and the task difficulty. The classifier trained on the physiological features using reaction time as the label can be used to classify task difficulty well above chance. Such systems can be utilized in Automation Invocation models that utilize appropriate control inputs and control strategies for optimal role allocation in collaborative tasks such as teleoperation.</p>
-<table>
-<thead>
-<tr>
-<th>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</p>
+</div>
 
 
 
