@@ -1,0 +1,32 @@
+---
+title: Using Physiological Measurements to Analyze the Tactical Decisions in Human Swarm Teams
+excerpt: "In this work, we explore the physiological correlates with the user's tactical decisions in a simulated search and rescue mission. "
+date: 2019-07-01
+author: "Hemanth Manjunatha"
+draft: false
+categories:
+
+- human-robot-interaction
+- python
+layout: single
+links:
+- icon: github
+  icon_pack: fab
+  name: code
+  url: https://github.com/HemuManju/reaction-time-classification
+- icon: paperclip
+  icon_pack: fas
+  name: paper
+  url: https://github.com/HemuManju/reaction-time-classification
+
+---
+
+<p align="center">
+  <img src="featured-hex.jpg" alt="drawing">
+</p>
+
+---
+
+### Abstract
+
+Human-Swarm interaction has attracted a lot of attention for their applications in areas such as exploration, rescue, surveillance, and interplanetary exploration. When humans assume a supervisory or tactician role in managing the robot swarm, the humans' (physiological) state significantly affects the mission performance. In this work, we explore the physiological correlates with the user's tactical decisions in a simulated search and rescue mission. The mission consists of supervising three groups of unmanned aerial vehicles and three groups of unmanned ground vehicles to search for a target building. The mission complexity is increased by introducing static adversarial teams. Due to the adversarial team's presence, the user should employ different tactics to search for a target. While the user interacts with the swarm, brain activity in forms of electroencephalogram (EEG) and eye movements are recorded. 20 participants, with prior experience in playing real-time strategy games, took part in the study. A linear mixed effect model is used to study the correlated physiological features and tactical decisions. Six features are extracted from the physiological data: engagement level, mental workload, Fz-Pz coherence, Fz-O1 coherence, pupil size, and the number of gaze fixations. The results show that mental engagement and Fz-O1 coherence are the important factors in predicting the tactical decisions. Specifically, Fz-O1 coherence in Beta (22.5-30 Hz) and Gamma (38-42 Hz) band is found to be significant.

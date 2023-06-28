@@ -1,0 +1,31 @@
+site_name: Hemanth Manjunatha
+theme:
+  palette:
+    scheme: slate
+  name: material
+  font:
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - glightbox
+
+copyright: Copyright &copy; 2023 Hemanth Manjunatha
