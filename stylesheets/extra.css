@@ -1,7 +1,8 @@
 .scale-icon {
     scale: 2;
-    padding-left: 20px;
-    padding-right: 20px;
+    white-space: 10px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
 }
 
 .md-content {
