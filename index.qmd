@@ -1,0 +1,25 @@
+---
+title: Hemanth Manjunatha
+about:
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/chrisvoncsefalvay/
+        - icon: github
+          text: Github
+          url: https://github.com/chrisvoncsefalvay
+        - text: "{{< ai google-scholar >}} Google Scholar"
+          url: https://scholar.google.com/citations?user=X_2G-VsAAAAJ
+image: images/avatar.jpg
+comments: false
+---
+
+## `Hello!`
+I am a postdoctoral researcher at Georgia Institute of Techonolgy exploring Reinforcement Learning, Human Robot/Swarm Interaction, and Brain Computer Interfaces. My long-term goal is to contribute towards developing science that enables humans and machines to be a synergistic team.
+
+## `Research Goals`
+
+- Developing theories for what levels and types of human modeling are needed for effective teaming with machines, specifically by considering neurophysiological modalities
+- Developing learning algorithms that enable machines to learn and adapt their behavior directly from human intentions, demonstration, and instructions
+- Developing learning algorithms that learn from human agents and provide an explanation at different levels of abstraction in complex collaborative tasks.

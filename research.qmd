@@ -1,0 +1,12 @@
+---
+listing:
+  contents: research
+  type: default
+  feed: true
+  sort-ui: true
+  image-height: 150px
+  image-align: left
+# toc-location: body
+page-layout: full
+title-block-banner: false
+---

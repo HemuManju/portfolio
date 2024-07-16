@@ -1,0 +1,42 @@
+---
+title: Classification of Reaction Time in Simulated Multiple Robot Tele-Exploration
+date: 2019-07-01
+author: Hemanth Manjunatha
+draft: false
+categories:
+- human-robot-interaction
+- python
+links:
+- icon: github
+  icon_pack: fab
+  name: code
+  url: https://github.com/HemuManju/reaction-time-classification
+- icon: paperclip
+  icon_pack: fas
+  name: paper
+  url: https://github.com/HemuManju/reaction-time-classification
+coverwidth: 300px
+---
+
+<p align="center">
+  <img src="cover.jpg" width='100%'>
+</p>
+
+## Abstract
+
+In the teleoperated scenario, as the task difficulty increases, the performance of the operator decreases which leads to a decrease in the overall system efficiency. Thus, it is important to predict the change in task difficulty in order to increase system efficiency. However, the task difficulty cannot be predicted as task information is unknown in real-time. Alternatively, the task difficulty can be estimated studying the distribution of reaction time. In this study, the physiological features of the operator are used to classify the reaction time as fast, normal and slow corresponding different levels of task difficulty. The physiological features are extracted from the eye (though eye tracking) and brain (through Electroencephalogram) from the operator performing teleoperation using two drones. Among the calculated features glance ratio and mental workload resulted in maximum classification accuracy when task type information is included.
+
+## Architecture
+
+**The study set out to answer two questions:**
+
+* `Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?`
+* `Do the task type information and individual differences in the task performance influence the classification of reaction time?`
+
+
+The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.
+
+These results are in agreement with the Linear Approach to the Threshold with Ergodic Rate (LATER) model, which suggests that reaction time depends on evidence collected and the task difficulty. The classifier trained on the physiological features using reaction time as the label can be used to classify task difficulty well above chance. Such systems can be utilized in Automation Invocation models that utilize appropriate control inputs and control strategies for optimal role allocation in collaborative tasks such as teleoperation.
+
+`The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time`
+

@@ -1,0 +1,40 @@
+---
+title: Transfer Learning of Motor Difficulty Classification in Physical Human-Robot Interaction Using Electromyography
+date: 2019-07-01
+author: Hemanth Manjunatha
+draft: false
+categories:
+- human-robot-interaction
+- python
+---
+
+<p align="center">
+  <img src="cover.jpg" width='100%'>
+</p>
+
+## Abstract
+
+Efficient human-robot collaboration during physical interaction requires estimating the human state for optimal role allocation and load sharing. Machine learning (ML) methods are gaining popularity for estimating the interaction parameters from physiological signals. However, due to individual differences, the ML models might not generalize well to new subjects. In this study, we present a convolution neural network (CNN) model to predict motor control difficulty using surface electromyography (sEMG) from human upper-limb during physical human-robot interaction (pHRI) task and present a transfer learning approach to transfer a learned model to new subjects.
+
+Twenty six individuals participated in a pHRI experiment where a subject guides the robot's end-effector with different levels of motor control difficulty. The motor control difficulty is varied by changing the damping parameter of the robot from low to high and constraining the motion to gross and fine movements. A CNN network with raw sEMG as input is used to classify the motor control difficulty.
+
+The CNN's transfer learning approach is compared against Riemann geometry-based Procrustes analysis (RPA). With very few labeled samples from new subjects, we demonstrate that the CNN-based transfer learning approach (avg. 69.77%) outperforms the RPA transfer learning (avg. 59.20%).
+
+Moreover, we observe that the subject's skill level in the pre-trained model has no significant effect on the transfer learning performance of the new users.
+
+## Results
+
+<p align="center">
+  <img src="featured.jpg" width="100%" />
+</p>
+
+**The study set out to answer two questions:**
+
+* Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?
+* Do the task type information and individual differences in the task performance influence the classification of reaction time?
+
+The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.
+
+These results are in agreement with the Linear Approach to the Threshold with Ergodic Rate (LATER) model, which suggests that reaction time depends on evidence collected and the task difficulty. The classifier trained on the physiological features using reaction time as the label can be used to classify task difficulty well above chance. Such systems can be utilized in Automation Invocation models that utilize appropriate control inputs and control strategies for optimal role allocation in collaborative tasks such as teleoperation.
+
+### **The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time**
