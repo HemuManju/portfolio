@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hemanth Manjunatha">
+<meta name="dcterms.date" content="2019-07-01">
 
-<title>Hemanth Manjunatha</title>
+<title>Transfer Learning of Motor Difficulty Classification in Physical Human-Robot Interaction Using Electromyography</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,15 +86,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications"> 
+    <a class="nav-link" href="../../publications"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -110,57 +111,84 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello"><code>Hello!</code></a></li>
-  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals"><code>Research Goals</code></a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time" id="toc-the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time" class="nav-link" data-scroll-target="#the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time"><strong>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="images/avatar.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hemanth Manjunatha</h1>
-</div>
+<h1 class="title">Transfer Learning of Motor Difficulty Classification in Physical Human-Robot Interaction Using Electromyography</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">human-robot-interaction</div>
+    <div class="quarto-category">python</div>
+  </div>
+  </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hemanth Manjunatha </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 1, 2019</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.linkedin.com/in/chrisvoncsefalvay/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/chrisvoncsefalvay" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=X_2G-VsAAAAJ" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<section id="hello" class="level2">
-<h2 data-anchor-id="hello"><code>Hello!</code></h2>
-<p>I am a postdoctoral researcher at Georgia Institute of Techonolgy exploring Reinforcement Learning, Human Robot/Swarm Interaction, and Brain Computer Interfaces. My long-term goal is to contribute towards developing science that enables humans and machines to be a synergistic team.</p>
+
+<p align="center">
+<img src="cover.jpg" width="100%">
+</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Efficient human-robot collaboration during physical interaction requires estimating the human state for optimal role allocation and load sharing. Machine learning (ML) methods are gaining popularity for estimating the interaction parameters from physiological signals. However, due to individual differences, the ML models might not generalize well to new subjects. In this study, we present a convolution neural network (CNN) model to predict motor control difficulty using surface electromyography (sEMG) from human upper-limb during physical human-robot interaction (pHRI) task and present a transfer learning approach to transfer a learned model to new subjects.</p>
+<p>Twenty six individuals participated in a pHRI experiment where a subject guides the robot’s end-effector with different levels of motor control difficulty. The motor control difficulty is varied by changing the damping parameter of the robot from low to high and constraining the motion to gross and fine movements. A CNN network with raw sEMG as input is used to classify the motor control difficulty.</p>
+<p>The CNN’s transfer learning approach is compared against Riemann geometry-based Procrustes analysis (RPA). With very few labeled samples from new subjects, we demonstrate that the CNN-based transfer learning approach (avg. 69.77%) outperforms the RPA transfer learning (avg. 59.20%).</p>
+<p>Moreover, we observe that the subject’s skill level in the pre-trained model has no significant effect on the transfer learning performance of the new users.</p>
 </section>
-<section id="research-goals" class="level2">
-<h2 data-anchor-id="research-goals"><code>Research Goals</code></h2>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p align="center">
+<img src="featured.jpg" width="100%">
+</p>
+<p><strong>The study set out to answer two questions:</strong></p>
 <ul>
-<li>Developing theories for what levels and types of human modeling are needed for effective teaming with machines, specifically by considering neurophysiological modalities</li>
-<li>Developing learning algorithms that enable machines to learn and adapt their behavior directly from human intentions, demonstration, and instructions</li>
-<li>Developing learning algorithms that learn from human agents and provide an explanation at different levels of abstraction in complex collaborative tasks.</li>
+<li>Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?</li>
+<li>Do the task type information and individual differences in the task performance influence the classification of reaction time?</li>
 </ul>
+<p>The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.</p>
+<p>These results are in agreement with the Linear Approach to the Threshold with Ergodic Rate (LATER) model, which suggests that reaction time depends on evidence collected and the task difficulty. The classifier trained on the physiological features using reaction time as the label can be used to classify task difficulty well above chance. Such systems can be utilized in Automation Invocation models that utilize appropriate control inputs and control strategies for optimal role allocation in collaborative tasks such as teleoperation.</p>
+<section id="the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time" class="level3">
+<h3 class="anchored" data-anchor-id="the-present-work-showed-that-physiological-measurements-could-indeed-be-used-to-model-the-task-difficulty-through-auxiliary-measurements-such-as-reaction-time"><strong>The present work showed that physiological measurements could indeed be used to model the task difficulty through auxiliary measurements such as reaction time</strong></h3>
 
 
 </section>
-</main></div>
-</div>
- <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -181,6 +209,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
