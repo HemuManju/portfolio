@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -111,8 +110,9 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello"><code>Hello!</code></a></li>
-  <li><a href="#research-goals" id="toc-research-goals" class="nav-link" data-scroll-target="#research-goals"><code>Research Goals</code></a></li>
+  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello">Hello!</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#research-interest" id="toc-research-interest" class="nav-link" data-scroll-target="#research-interest">Research Interest</a></li>
   </ul>
 </nav>
     </div>
@@ -129,15 +129,15 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header>
     <div class="about-links">
-  <a href="https://www.linkedin.com/in/chrisvoncsefalvay/" class="about-link" rel="" target="">
+  <a href="https://www.linkedin.com/in/hemanth-manjunatha-73464059" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
-  <a href="https://github.com/chrisvoncsefalvay" class="about-link" rel="" target="">
+  <a href="https://github.com/HemuManju" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
   </a>
-  <a href="https://scholar.google.com/citations?user=X_2G-VsAAAAJ" class="about-link" rel="" target="">
+  <a href="https://scholar.google.com/citations?user=V4zaTKIAAAAJ&amp;hl=en&amp;oi=ao" class="about-link" rel="" target="">
      <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
   </a>
 </div>
@@ -145,16 +145,18 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <section id="hello" class="level2">
-<h2 data-anchor-id="hello"><code>Hello!</code></h2>
-<p>I am a postdoctoral researcher at Georgia Institute of Techonolgy exploring Reinforcement Learning, Human Robot/Swarm Interaction, and Brain Computer Interfaces. My long-term goal is to contribute towards developing science that enables humans and machines to be a synergistic team.</p>
+<h2 data-anchor-id="hello">Hello!</h2>
+<p>I am glad you landed on this tiny corner of the internet</p>
 </section>
-<section id="research-goals" class="level2">
-<h2 data-anchor-id="research-goals"><code>Research Goals</code></h2>
-<ul>
-<li>Developing theories for what levels and types of human modeling are needed for effective teaming with machines, specifically by considering neurophysiological modalities</li>
-<li>Developing learning algorithms that enable machines to learn and adapt their behavior directly from human intentions, demonstration, and instructions</li>
-<li>Developing learning algorithms that learn from human agents and provide an explanation at different levels of abstraction in complex collaborative tasks.</li>
-</ul>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p><strong>PhD in Mechanical and Aerospace Engineering</strong> University at Buffalo, USA | 2016–2021</p>
+<p><strong>M.S. in Mechanical and Aerospace Engineering</strong> University at Buffalo, USA | 2015–2017</p>
+<p><strong>B.S. in Mechanical Engineering</strong> National Institute of Engineering, India | 2010–2014</p>
+</section>
+<section id="research-interest" class="level2">
+<h2 data-anchor-id="research-interest">Research Interest</h2>
+<p>Safe Learning based Cyber Physical Systems | Brain Machine Interfaces | Human-Robot Interaction | Robotics | Haptics | Telerehabilitation</p>
 
 
 </section>
@@ -233,6 +235,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -267,7 +287,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
