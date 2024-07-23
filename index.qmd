@@ -5,21 +5,28 @@ about:
     links:
         - icon: linkedin
           text: LinkedIn
-          url: https://www.linkedin.com/in/chrisvoncsefalvay/
+          url: https://www.linkedin.com/in/hemanth-manjunatha-73464059
         - icon: github
           text: Github
-          url: https://github.com/chrisvoncsefalvay
+          url: https://github.com/HemuManju
         - text: "{{< ai google-scholar >}} Google Scholar"
-          url: https://scholar.google.com/citations?user=X_2G-VsAAAAJ
+          url: https://scholar.google.com/citations?user=V4zaTKIAAAAJ&hl=en&oi=ao
 image: images/avatar.jpg
-comments: false
 ---
 
-## `Hello!`
-I am a postdoctoral researcher at Georgia Institute of Techonolgy exploring Reinforcement Learning, Human Robot/Swarm Interaction, and Brain Computer Interfaces. My long-term goal is to contribute towards developing science that enables humans and machines to be a synergistic team.
+## Hello!
+I am glad you landed on this tiny corner of the internet
 
-## `Research Goals`
+## Education
 
-- Developing theories for what levels and types of human modeling are needed for effective teaming with machines, specifically by considering neurophysiological modalities
-- Developing learning algorithms that enable machines to learn and adapt their behavior directly from human intentions, demonstration, and instructions
-- Developing learning algorithms that learn from human agents and provide an explanation at different levels of abstraction in complex collaborative tasks.
+**PhD in Mechanical and Aerospace Engineering**
+University at Buffalo, USA | 2016–2021
+
+**M.S. in Mechanical and Aerospace Engineering**
+University at Buffalo, USA | 2015–2017
+
+**B.S. in Mechanical Engineering**
+National Institute of Engineering, India | 2010–2014
+
+## Research Interest
+Safe Learning based Cyber Physical Systems | Brain Machine Interfaces | Human-Robot Interaction | Robotics | Haptics | Telerehabilitation

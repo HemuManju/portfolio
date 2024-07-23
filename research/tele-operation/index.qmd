@@ -1,6 +1,6 @@
 ---
 title: Classification of Reaction Time in Simulated Multiple Robot Tele-Exploration
-date: 2019-07-01
+date: today
 author: Hemanth Manjunatha
 draft: false
 categories:
@@ -8,19 +8,10 @@ categories:
 - python
 links:
 - icon: github
-  icon_pack: fab
-  name: code
   url: https://github.com/HemuManju/reaction-time-classification
-- icon: paperclip
-  icon_pack: fas
-  name: paper
-  url: https://github.com/HemuManju/reaction-time-classification
-coverwidth: 300px
 ---
 
-<p align="center">
-  <img src="cover.jpg" width='100%'>
-</p>
+![](cover.jpg){fig-align="center"}
 
 ## Abstract
 
@@ -28,11 +19,10 @@ In the teleoperated scenario, as the task difficulty increases, the performance 
 
 ## Architecture
 
-**The study set out to answer two questions:**
-
-* `Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?`
-* `Do the task type information and individual differences in the task performance influence the classification of reaction time?`
-
+::: {.callout-important title=Research\ Questions}
+* Which physiological modalities, eye, brain activity, or their combination can provide a more accurate classification of the reaction time?
+* Do the task type information and individual differences in the task performance influence the classification of reaction time?
+:::
 
 The study concluded that both eye features and cognitive features are needed to classify the reaction time effectively. The task type information had a significant influence on the classification accuracy, while the same could not be said with individual difference information. The accuracy of classification was increased when task type information was included as features, indicating that the reaction time depends on the task information.
 

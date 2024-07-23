@@ -1,6 +1,6 @@
 ---
 title: SHASTA A Simulator for Human and Swarm Team Applications
-date: 2019-07-01
+date: today
 author: Hemanth Manjunatha
 draft: false
 categories:
@@ -9,19 +9,10 @@ categories:
 layout: single
 links:
 - icon: github
-  icon_pack: fab
-  name: code
-  url: https://github.com/HemuManju/reaction-time-classification
-- icon: paperclip
-  icon_pack: fas
-  name: paper
   url: https://github.com/HemuManju/reaction-time-classification
 ---
 
-<p align="center">
-  <img src="cover.jpg" width='100%' >
-</p>
-
+![](cover.jpg){fig-align="center"}
 
 ## Abstract
 

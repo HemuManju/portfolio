@@ -6,7 +6,7 @@ listing:
   sort-ui: true
   image-height: 150px
   image-align: left
-# toc-location: body
+toc-location: body
 page-layout: full
-title-block-banner: false
+# title-block-banner: false
 ---

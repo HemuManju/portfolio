@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hemanth Manjunatha">
-<meta name="dcterms.date" content="2019-07-01">
+<meta name="dcterms.date" content="2024-07-22">
 
 <title>Using Physiological Measurements to Analyze the Tactical Decisions in Human Swarm Teams</title>
 <style>
@@ -70,7 +70,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -143,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 1, 2019</p>
+      <p class="date">July 22, 2024</p>
     </div>
   </div>
   
@@ -155,9 +154,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p align="center">
-<img src="cover.jpg" width="100%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cover.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
 <p>Human-Swarm interaction has attracted a lot of attention for their applications in areas such as exploration, rescue, surveillance, and interplanetary exploration. When humans assume a supervisory or tactician role in managing the robot swarm, the humans’ (physiological) state significantly affects the mission performance. In this work, we explore the physiological correlates with the user’s tactical decisions in a simulated search and rescue mission. The mission consists of supervising three groups of unmanned aerial vehicles and three groups of unmanned ground vehicles to search for a target building. The mission complexity is increased by introducing static adversarial teams. Due to the adversarial team’s presence, the user should employ different tactics to search for a target. While the user interacts with the swarm, brain activity in forms of electroencephalogram (EEG) and eye movements are recorded. 20 participants, with prior experience in playing real-time strategy games, took part in the study. A linear mixed effect model is used to study the correlated physiological features and tactical decisions. Six features are extracted from the physiological data: engagement level, mental workload, Fz-Pz coherence, Fz-O1 coherence, pupil size, and the number of gaze fixations. The results show that mental engagement and Fz-O1 coherence are the important factors in predicting the tactical decisions. Specifically, Fz-O1 coherence in Beta (22.5-30 Hz) and Gamma (38-42 Hz) band is found to be significant.</p>
@@ -245,6 +246,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -279,7 +298,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
